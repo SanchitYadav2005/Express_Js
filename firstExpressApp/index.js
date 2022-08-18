@@ -8,7 +8,7 @@ const port = 3000;
 //Mounts the specified middleware function or functions at the specified path: the middleware function is executed when the base of the requested path matches path.
 // app.use()
 app.use(function handeler(){
-    console.log("reloded the page")
+    console.log("reloded the")
 })
 //Binds and listens for connections on the specified host and port. app.listen()
 app.listen(port, () => {
