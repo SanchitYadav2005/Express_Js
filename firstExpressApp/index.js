@@ -7,8 +7,9 @@ const app = express();
 const port = 3000;
 //Mounts the specified middleware function or functions at the specified path: the middleware function is executed when the base of the requested path matches path.
 // app.use()
-app.use(function handeler(){
+app.use(function handeler(req, res){
     console.log("reloded the")
+    res.send("hi".toUpperCase())
 })
 //Binds and listens for connections on the specified host and port. app.listen()
 app.listen(port, () => {
